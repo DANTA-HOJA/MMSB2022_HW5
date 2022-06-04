@@ -2,7 +2,7 @@
 110.2 BEBI5009_生物系統模擬
 
 
-# SSA 
+# Stochastic Simulation Algorithm（Gillespie Algorithm）
 
 - bistable：http://www.best.org.tw/upload/downloads_upload/2020_12_BEST%E5%AD%A3%E8%A8%8A-yswu.pdf p.16, 1.2 基因調控中的雙穩態系統.
 
@@ -11,7 +11,7 @@
 
 # Agent-based Modeling
 
-# Question 1：
+## Question 1：
 
 Please simulate a combination of 
 - beta_max = 0.05, 0.04, 0.03, 0.02, 0.01 (representing personal hygiene: e.g. Wearing a mask) and
@@ -22,7 +22,7 @@ Plot the number of infected individuals over 5000 steps with 5 beta_max paramete
 
 (That is, plot #1 is isolated = 0.0 with 5 time series: beta_max = 0.05, 0.04, 0.03, 0.02, 0.01, plot #2 is isolated = 0.5 with 5 time series: beta_max = 0.05, 0.04, 0.03, 0.02, 0.01, and so on.)
 
-## SIR Model, isolated = 0.0
+### SIR Model, isolated = 0.0
 ![SIR Model, isolated = 0.0](./PNG/SIR_Model_isolated_000.png)
 ```
 Q2, maxima (peaks), isolated = 0.0：
@@ -34,7 +34,7 @@ Q2, maxima (peaks), isolated = 0.0：
 - βmax = 0.01  ==> 1000
 ```
 
-## SIR Model, isolated = 0.5
+### SIR Model, isolated = 0.5
 ![SIR Model, isolated = 0.5](./PNG/SIR_Model_isolated_050.png)
 ```
 Q2, maxima (peaks), isolated = 0.5：
@@ -46,7 +46,7 @@ Q2, maxima (peaks), isolated = 0.5：
 - βmax = 0.01  ==> 983
 ```
 
-## SIR Model, isolated = 0.7
+### SIR Model, isolated = 0.7
 ![SIR Model, isolated = 0.7](./PNG/SIR_Model_isolated_070.png)
 ```
 Q2, maxima (peaks), isolated = 0.7：
@@ -58,7 +58,7 @@ Q2, maxima (peaks), isolated = 0.7：
 - βmax = 0.01  ==> 882
 ```
 
-## SIR Model, isolated = 0.8
+### SIR Model, isolated = 0.8
 ![SIR Model, isolated = 0.8](./PNG/SIR_Model_isolated_080.png)
 ```
 Q2, maxima (peaks), isolated = 0.8：
@@ -70,7 +70,7 @@ Q2, maxima (peaks), isolated = 0.8：
 - βmax = 0.01  ==> 776
 ```
 
-## SIR Model, isolated = 0.9
+### SIR Model, isolated = 0.9
 ![SIR Model, isolated = 0.9](./PNG/SIR_Model_isolated_090.png)
 ```
 Q2, maxima (peaks), isolated = 0.9：
@@ -82,7 +82,7 @@ Q2, maxima (peaks), isolated = 0.9：
 - βmax = 0.01  ==> 415
 ```
 
-# Question 2：
+## Question 2：
 
 - List the maxima (peaks) of infected individuals in the 25 simulations. Which parameter set is the most effective in "flattening the curve" (having the lowest peak infected individuals)?
 

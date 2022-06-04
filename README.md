@@ -23,7 +23,7 @@ Plot the number of infected individuals over 5000 steps with 5 beta_max paramete
 (That is, plot #1 is isolated = 0.0 with 5 time series: beta_max = 0.05, 0.04, 0.03, 0.02, 0.01, plot #2 is isolated = 0.5 with 5 time series: beta_max = 0.05, 0.04, 0.03, 0.02, 0.01, and so on.)
 
 ## SIR Model, isolated = 0.0
-![SIR Model, isolated = 0.0](./PNG\SIR_Model_isolated_000.png)
+![SIR Model, isolated = 0.0](./PNG/SIR_Model_isolated_000.png)
 ```
 Q2, maxima (peaks), isolated = 0.0：
 
@@ -35,7 +35,7 @@ Q2, maxima (peaks), isolated = 0.0：
 ```
 
 ## SIR Model, isolated = 0.5
-![SIR Model, isolated = 0.5](./PNG\SIR_Model_isolated_050.png)
+![SIR Model, isolated = 0.5](./PNG/SIR_Model_isolated_050.png)
 ```
 Q2, maxima (peaks), isolated = 0.5：
 
@@ -47,7 +47,7 @@ Q2, maxima (peaks), isolated = 0.5：
 ```
 
 ## SIR Model, isolated = 0.7
-![SIR Model, isolated = 0.7](./PNG\SIR_Model_isolated_070.png)
+![SIR Model, isolated = 0.7](./PNG/SIR_Model_isolated_070.png)
 ```
 Q2, maxima (peaks), isolated = 0.7：
 
@@ -59,7 +59,7 @@ Q2, maxima (peaks), isolated = 0.7：
 ```
 
 ## SIR Model, isolated = 0.8
-![SIR Model, isolated = 0.8](./PNG\SIR_Model_isolated_080.png)
+![SIR Model, isolated = 0.8](./PNG/SIR_Model_isolated_080.png)
 ```
 Q2, maxima (peaks), isolated = 0.8：
 
@@ -71,7 +71,7 @@ Q2, maxima (peaks), isolated = 0.8：
 ```
 
 ## SIR Model, isolated = 0.9
-![SIR Model, isolated = 0.9](./PNG\SIR_Model_isolated_090.png)
+![SIR Model, isolated = 0.9](./PNG/SIR_Model_isolated_090.png)
 ```
 Q2, maxima (peaks), isolated = 0.9：
 

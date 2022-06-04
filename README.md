@@ -29,7 +29,7 @@ With 3 sets of initial conditions: (p1, p2) = (100, 50), (50, 100), and (75, 75)
 - bistable 說明：http://www.best.org.tw/upload/downloads_upload/2020_12_BEST%E5%AD%A3%E8%A8%8A-yswu.pdf, p.16, 1.2 基因調控中的雙穩態系統.
 
 ## Report
-[Link]()
+[./MMSB_HW5_SSA_report.pdf](./MMSB_HW5_SSA_report.pdf)
 
 
 # Agent-based Modeling

@@ -12,8 +12,8 @@ Adapted from: Chemical and Biomedical Enginnering Calculations Using Python Ch.4
 
 # alpha 越大時前兩個 propensities 越大 => dt會越小 => 所以同樣的 t 要跑更多步驟，因此改成限制最大反應次數（step）
 =#
-function ssa_direct(model, u0::AbstractArray, max_step, p, stoich; tstart=zero(max_step))
-    t = tstart   # Current time
+function ssa_direct(model, u0::AbstractArray, max_step, p, stoich)
+    t = 0.0   # Current time
     ts = [t]     # Time points
     u = copy(u0) # Current state
     us = copy(u) # States over time
@@ -38,8 +38,8 @@ Adapted from: Chemical and Biomedical Enginnering Calculations Using Python Ch.4
 
 # alpha 越大時前兩個 propensities 越大 => dt會越小 => 所以同樣的 t 要跑更多步驟，因此改成限制最大反應次數（step）
 =#
-function ssa_first(model, u0, max_step, p, stoich; tstart=zero(max_step))
-    t = tstart   # Current time
+function ssa_first(model, u0, max_step, p, stoich)
+    t = 0.0   # Current time
     ts = [t]     # Time points
     u = copy(u0) # Current state
     us = copy(u) # States over time
@@ -103,7 +103,7 @@ model(u, p, t) = [p.alpha / (1+u[2]^p.beta),
 # change alpha(α) => 5, 50, 500, and 5000
 # change initial conditions => (p1, p2) = (100, 50), (50, 100), and (75, 75)
 parameters = (alpha=5.0, beta=4.0, delta=1.0, stoich=[[1, 0], [0, 1], [-1, 0], [0, -1]])
-max_step = 110000.0
+max_step = 110000
 
 # alpha 越大時前兩個 propensities 越大 => dt會越小 => 所以同樣的 t 要跑更多步驟，因此改成限制最大反應次數（step）
 

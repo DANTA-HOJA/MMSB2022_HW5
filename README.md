@@ -4,12 +4,34 @@
 
 # Stochastic Simulation Algorithm（Gillespie Algorithm）
 
-- bistable：http://www.best.org.tw/upload/downloads_upload/2020_12_BEST%E5%AD%A3%E8%A8%8A-yswu.pdf p.16, 1.2 基因調控中的雙穩態系統.
+Reference：[How to do stochastic simulations in Julia](https://ntumitolab.github.io/mmsb-bebi-5009/intro/04-gillespie.html)
 
-- [Result]()
+## Task Description（7.8.26 Noisy toggle switch）
+The following reactions represent a bistable toggle switch:
+![HW5_SSA_Reaction](./PNG/HW5_SSA_Reaction.png)
+
+where δ = 1 and β = 4. N1 and N2 stand for the amount of P1 and P2, respectively.
+
+With 3 sets of initial conditions: (p1, p2) = (100, 50), (50, 100), and (75, 75)
+
+- Please run simulations of the stochastic system for α = 5, 50, 500, and 5000, **both in the direct and first reaction methods** by your own. So there will be _eight_ kinds of simulations in total. 
+- Please show that for α = 5000, the system exhibits bistability, and for α = 5, the system is noisy.
+- Please explain the model behaviors when α = 50 and 500.
+
+☆ Note
+
+- Be sure to run the simulations sufficiently long so that the steady trend is clear (i.e., at least 10,000 reaction steps)
+- It may be necessary to run multiple simulations of the same parameter set to confirm your findings.
+
+- bistable 說明：http://www.best.org.tw/upload/downloads_upload/2020_12_BEST%E5%AD%A3%E8%A8%8A-yswu.pdf, p.16, 1.2 基因調控中的雙穩態系統.
+
+## Result
+[Report Link]()
 
 
 # Agent-based Modeling
+
+[This example](https://sosiristseng.github.io/juliabook-abm/abm-04.html) simulates viral spread in a population using a SIR model.
 
 ## Question 1：
 

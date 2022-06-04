@@ -1,2 +1,4 @@
 # Julia Env file
 *.toml
+
+_static

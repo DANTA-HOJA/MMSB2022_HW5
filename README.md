@@ -6,7 +6,10 @@
 
 Reference：[How to do stochastic simulations in Julia](https://ntumitolab.github.io/mmsb-bebi-5009/intro/04-gillespie.html)
 
-## Task Description（7.8.26 Noisy toggle switch）
+## Task Description
+
+（7.8.26 Noisy toggle switch）
+
 The following reactions represent a bistable toggle switch:
 ![HW5_SSA_Reaction](./PNG/HW5_SSA_Reaction.png)
 
@@ -14,26 +17,26 @@ where δ = 1 and β = 4. N1 and N2 stand for the amount of P1 and P2, respective
 
 With 3 sets of initial conditions: (p1, p2) = (100, 50), (50, 100), and (75, 75)
 
-- Please run simulations of the stochastic system for α = 5, 50, 500, and 5000, **both in the direct and first reaction methods** by your own. So there will be _eight_ kinds of simulations in total. 
-- Please show that for α = 5000, the system exhibits bistability, and for α = 5, the system is noisy.
-- Please explain the model behaviors when α = 50 and 500.
+1. Please run simulations of the stochastic system for α = 5, 50, 500, and 5000, **both in the direct and first reaction methods** by your own. So there will be _eight_ kinds of simulations in total.
+2. Please show that for α = 5000, the system exhibits bistability, and for α = 5, the system is noisy.
+3. Please explain the model behaviors when α = 50 and 500.
 
-☆ Note
+☆ Note：
 
 - Be sure to run the simulations sufficiently long so that the steady trend is clear (i.e., at least 10,000 reaction steps)
 - It may be necessary to run multiple simulations of the same parameter set to confirm your findings.
 
 - bistable 說明：http://www.best.org.tw/upload/downloads_upload/2020_12_BEST%E5%AD%A3%E8%A8%8A-yswu.pdf, p.16, 1.2 基因調控中的雙穩態系統.
 
-## Result
-[Report Link]()
+## Report
+[Link]()
 
 
 # Agent-based Modeling
 
-[This example](https://sosiristseng.github.io/juliabook-abm/abm-04.html) simulates viral spread in a population using a SIR model.
+Reference：[Simulates viral spread in a population using a SIR model](https://sosiristseng.github.io/juliabook-abm/abm-04.html) 
 
-## Question 1：
+## Task Description：
 
 Please simulate a combination of 
 - beta_max = 0.05, 0.04, 0.03, 0.02, 0.01 (representing personal hygiene: e.g. Wearing a mask) and
@@ -104,12 +107,22 @@ Q2, maxima (peaks), isolated = 0.9：
 - βmax = 0.01  ==> 415
 ```
 
-## Question 2：
+## Question：
 
 - List the maxima (peaks) of infected individuals in the 25 simulations. Which parameter set is the most effective in "flattening the curve" (having the lowest peak infected individuals)?
 
         isolated 0.9, βmax = 0.05
- 
+        
+    ```
+    Q2, maxima (peaks), isolated = 0.9：
+
+    - βmax = 0.05  ==> 376
+    - βmax = 0.04  ==> 418
+    - βmax = 0.03  ==> 406
+    - βmax = 0.02  ==> 398
+    - βmax = 0.01  ==> 415
+    ```
+
 - Compared to decreasing the beta_max parameter, is increasing the "isolated" parameter more effective in flattening the curve?
 
         YES
